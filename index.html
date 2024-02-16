@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>conversor de Moedas</title>
+</head>
+
+<body>
+    <img class="conversor-moedas" src="./assets/OIP-removebg-preview.png" alt="conversor-moedas">
+
+    <main>
+        <label>
+            Converter <b>de</b>
+            <select class="currency-select-top">
+                <option value="real">R$ Real Brasileiro</option>
+                <option value="dolar">US$ Dolár Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="bitcoin">BTC</option>
+            </select> 
+        </label>
+
+        <label>
+            Converter <b>de</b>
+
+            <select class="currency-select">
+                <option value="real-2">R$ Real Brasileiro</option>
+                <Option value="dolar-2">US$ Dolár Americano</option>
+                <option value="euro-2">€ Euro</option>
+                <option value="libra-2">£ Libra</option>
+                <option value="bitcoin-2">BTC</option>
+            </select>
+        </label>
+
+        <label>
+            <b>Valor</b>
+            <input class="input-currency" placeholder="R$ 10.000,00">
+        </label>
+
+        <button class="convert-button">Converter</button>
+
+        <section>
+
+            <div class="caixa-1">
+            <img class="currency-image" src="./assets/real.png" alt="logo-real">
+            <p class="currency" id="currency-name1">Real</p>
+            <p class="currency-value-to-convert">R$ 0,00</p>
+            </div>
+
+            <img class="seta" src="./assets/seta.png" alt="logo-seta">
+
+            <div class="caixa-2">
+            <img class="currency-img" src="./assets/dolar.png" alt="logo-dolar">
+            <p class="currency" id="currency-name">Dólar Américano</p>
+            <p class="currency-value">US$ 0,00</p>
+            
+        </div>
+        </section>
+    </main>
+</body>
+<script src="./scripts.js"></script>
+</html>
