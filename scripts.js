@@ -17,13 +17,7 @@ function convertValues() {
     const bitcoinToday = 256.879
 
     // moedas convertidas //
-    if (currencySelect.value == "real-2") {
 
-        currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
-            style: "currency",
-            currency: "BRL"
-        }).format(inputCurrencyValue / realToday)
-    }
 
     if (currencySelect.value == "dolar-2") {
 
@@ -49,8 +43,8 @@ function convertValues() {
 
     }
 
-    if(currencySelect.value == "bitcoin"){
-        currencyValue.innerHTML = new Intl.NumberFormat("de-DE",{
+    if(currencySelect.value == "bitcoin-2"){
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE",{
         style:"currency",
         currency:"BTC"
         }).format(inputCurrency / bitcoinToday);
@@ -73,13 +67,6 @@ function convertValues() {
 
     }
 
-    if (currencySelectTop.value == "real") {
-        currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
-            style: "currency",
-            currency: "BRL"
-        }).format(inputCurrencyValue)
-
-    }
 
     if (currencySelectTop.value == "euro") {
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("de-DE", {
@@ -162,6 +149,11 @@ function changeCurrency() {
     else if (currencySelectTop.value == "bitcoin") {
         currencyName1.innerHTML = "Bitcoin";
         currencyImage.src = "./assets/bitcoin 1.png"
+    }
+
+    else if (currencySelectTop.value == "real") {
+        currencyName1.innerHTML = "Real";
+        currencyImage.src = "./assets/real.png"
     }
 
 
