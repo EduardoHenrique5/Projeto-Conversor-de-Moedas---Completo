@@ -153,10 +153,6 @@ function changeCurrency() {
         currencyImage.src = "./assets/euro.png"
     }
 
-    else if (currencySelectTop.value == "real") {
-        currencyName1.innerHTML = "Real";
-        currencyImage.src = "./assets/real.png"
-    }
 
     else if (currencySelectTop.value == "libra") {
         currencyName1.innerHTML = "Libra";
